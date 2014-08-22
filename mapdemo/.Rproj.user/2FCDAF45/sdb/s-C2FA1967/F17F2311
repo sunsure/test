@@ -1,0 +1,16 @@
+{
+    "contents" : "\n# This is the user-interface definition of a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\nlibrary(shiny)\nlibrary(ggplot2)\n\nshinyUI(pageWithSidebar(\n  \n  headerPanel(\"India Administrative Areas\"),\n  \n  sidebarPanel(  \n    \n    \n    selectInput('reg', 'Please wait...downloading the map.\\nSelect Region to Highlight:', c(\"Andhra Pradesh\",\"Assam\",\"Bihar\",\"Gujarat\",\"Haryana\",\"Himachal Pradesh\",\"Jharkhand\",\"Karnataka\",\"Kerala\",\"Madhya Pradesh\",\"Maharashtra\",\"Orissa\",\"Punjab\",\"Rajasthan\",\"Tamil Nadu\",\"Uttaranchal\",\"Uttar Pradesh\",\"West Bengal\" ))\n    ),\n    \n    mainPanel( \n      plotOutput('plot')\n    )\n  )\n)\n\n",
+    "created" : 1408693366940.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "559781033",
+    "id" : "F17F2311",
+    "lastKnownWriteTime" : 1408688031,
+    "path" : "~/mapdemo/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
